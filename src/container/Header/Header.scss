@@ -1,0 +1,79 @@
+ #home {
+    position: relative;
+    background: url(../../assets/insurance2.jpg);
+    z-index: 0;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+    .app__wrapper {
+        padding: 0;
+
+        .copyright {
+            display: none;
+        }
+    }
+ }
+
+ .app__header {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+
+    padding: 6rem 2rem 0;
+
+    @media screen and (min-width:2000px) {
+        padding-top: 8rem;
+    }
+
+    @media screen and (max-width:1200px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:400px) {
+        padding-top: 6rem 1rem 2rem;
+    }
+ }
+
+//  .welcome-text {
+//     position: absolute;
+//     top: 15%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+    
+//   }
+
+ .app__header-info {
+    flex: 0.65;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 2000px) {
+        width: 100%;
+        margin-right: 0rem;
+    }
+ }
+
+ .app__header-badge {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  
+    span {
+      font-size: 2.5rem;
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 5rem;
+      }
+    }
+  
+    @media screen and (max-width: 1200px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }

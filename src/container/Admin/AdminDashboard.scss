@@ -1,0 +1,125 @@
+.app__admin {
+  background-color: #191825;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  h1 {
+    padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+  }
+}
+
+.app__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.app__grid {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .app__grid {
+    margin-top: 56px; 
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1.5rem;
+  background: rgba(24, 20, 20, 0.987);
+  border: 2px solid rgb(240, 220, 8);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 0.5rem;
+  transition: all 1s;
+  height: 200px;
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: rgb(209, 225, 139);
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+ @media only screen and (max-width: 768px) {
+  .app__grid {
+    max-width: 500px;
+  }
+
+  .card {
+    height: 160px;
+  }
+
+  .card .image {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .app__grid {
+    max-width: 320px;
+  }
+
+  .card {
+    height: 140px;
+  }
+
+  .card .image {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}

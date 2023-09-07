@@ -1,0 +1,21 @@
+.app__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+.viewemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container {
+    background-color: #EADDCA;
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
